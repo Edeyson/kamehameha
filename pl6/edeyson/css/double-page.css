@@ -7,6 +7,7 @@ body{
 	padding:0;
 }
 
+
 .header h1, .header p{
 	text-align: center;
 }
@@ -15,6 +16,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
+	height: 25px;
 }
 
 .header .msg-mobile{
@@ -35,7 +37,7 @@ body{
 }
 
 .flipbook-viewport .flipbook{
-	width:1000px;
+	width:845px;
 	height:600px;
 	left:-400px;
 	top:-200px;
@@ -68,7 +70,7 @@ body{
 }
 
 .flipbook-viewport .double{
-	width:1000px;
+	width:845px;
 	height:600px;
 	background-size:100% 100%;
 }
@@ -92,28 +94,33 @@ body{
 	border-radius: 8px;
 }
 
+/* ---------------------------------------------- mobile*/
+
+
+
+
 .mobile .flipbook-viewport .container{
-	top: 50%;
+	top: 60%;
     left: 65%;
 }
 
 
 .mobile .flipbook-viewport .flipbook{
-	width:525px;
-	height:375px;
+	width:500px;
+	height:355px;
 	left:-400px;
 	top:-200px;
 }
 
 .mobile .flipbook-viewport .page{
 	width:350px;
-	height:375px;
+	height:355px;
 }
 
 
 .mobile .flipbook-viewport .double{
-	width:525px;
-	height:375px;
+	width:500px;
+	height:355px;
 }
 
 .mobile .controls{
@@ -127,3 +134,6 @@ body{
 .msg-mobile.visible{
 	display: block;
 }
+
+
+
