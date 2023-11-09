@@ -7,8 +7,11 @@ body{
 	padding:0;
 }
 
-.header h1{
+.header h1, .header p{
 	text-align: center;
+}
+.header{
+	display: flex;
 }
 
 .flipbook-viewport{
@@ -34,7 +37,7 @@ body{
 .flipbook-viewport .page{
 	width:419px;
 	height:600px;
-	background-color:white;
+	background-color:#fcfcfc;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 }
@@ -80,4 +83,54 @@ body{
 	font-family: 'Arial';
 	background-color: #9c7bd6;
 	border-radius: 8px;
+}
+/*
+.mobile .container{
+	transform: rotate(90deg);
+	left: -23%	;
+}
+.mobile .container{
+top: 54%;
+}
+
+.mobile .controls{
+	transform: rotate(90deg);
+	left: 0	;
+	width: auto;
+	bottom: 50%;
+}
+
+.mobile .flipbook-viewport .flipbook{
+	margin-left: 0 !important;
+}
+
+*/
+
+
+.mobile .flipbook-viewport .container{
+	top: 50%;
+    left: 65%;
+}
+
+
+.mobile .flipbook-viewport .flipbook{
+	width:525px;
+	height:375px;
+	left:-400px;
+	top:-200px;
+}
+
+.mobile .flipbook-viewport .page{
+	width:350px;
+	height:375px;
+}
+
+
+.mobile .flipbook-viewport .double{
+	width:525px;
+	height:375px;
+}
+
+.mobile .controls{
+	left: 30%;
 }
