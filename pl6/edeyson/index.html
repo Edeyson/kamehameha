@@ -9,6 +9,9 @@
 <head>
 	<meta name="viewport" content="width = 1050, user-scalable = si" />
 	<link rel="shortcut icon" href="../../qr/icon.png" type="image/x-icon">
+	<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+
 	<title>Edeyson Bermeo</title>
 
 </head>
@@ -52,7 +55,7 @@
 			</svg>
 		</p>
 	</div>
-	<div id="qrcode" style="position: absolute; display: none;"></div>
+
 	<div id="content">
 		<div class="flipbook-viewport">
 			<div class="container">
@@ -90,7 +93,7 @@
 	<script>
 		$(document).ready(function () {
 
-			if (screen.width <= 767 || screen.height <= 767) {
+			if (screen.width <= 1024) {
 				document.querySelector("#content").classList.add("mobile");
 			}
 			if (!window.orientation && window.orientation == 0) {
@@ -100,33 +103,6 @@
 		})
 	</script>
 
-	<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-	<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-
-	<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-
-
-
-	<script>
-		// Obtén el elemento HTML donde mostrarás el código QR
-		const qrcodeElement = document.getElementById('qrcode');
-
-		// Contenido que deseas codificar en el QR
-		const contenidoQR = window.location.href;
-
-		// Crea un objeto QRCode con la configuración deseada
-		const qrcode = new QRCode(qrcodeElement, {
-			text: contenidoQR,
-			width: 200,
-			height: 200,
-			colorDark: "#000", // Color del módulo oscuro del código QR
-			colorLight: "#fff", // Color del módulo claro del código QR (fondo)
-		});
-
-		// Puedes personalizar el tamaño y otros atributos según tus necesidades
-
-	</script>
-	</script>
 
 	<script type="text/javascript">
 
