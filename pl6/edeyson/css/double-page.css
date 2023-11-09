@@ -91,28 +91,6 @@ body{
 	background-color: #9c7bd6;
 	border-radius: 8px;
 }
-/*
-.mobile .container{
-	transform: rotate(90deg);
-	left: -23%	;
-}
-.mobile .container{
-top: 54%;
-}
-
-.mobile .controls{
-	transform: rotate(90deg);
-	left: 0	;
-	width: auto;
-	bottom: 50%;
-}
-
-.mobile .flipbook-viewport .flipbook{
-	margin-left: 0 !important;
-}
-
-*/
-
 
 .mobile .flipbook-viewport .container{
 	top: 50%;
