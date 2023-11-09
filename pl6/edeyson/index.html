@@ -1,10 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="en"> 
 
 <head>
 	<meta name="viewport" content="width = 1050, user-scalable = si" />
@@ -59,17 +54,17 @@
 		<div class="flipbook-viewport">
 			<div class="container">
 				<div class="flipbook">
-					<div class="page" style="background-image:url(pages/1.webp)"></div>
+					<div class="page" style="background-image:url(../src/1.webp)"></div>
 					<div class="double" style="background-image:url(pages/2.webp)"> </div>
-					<div class="double" style="background-image:url(pages/3.webp)"> </div>
-					<div class="double" style="background-image:url(pages/4.webp)"> </div>
-					<div class="double" style="background-image:url(pages/5.webp)"> </div>
-					<div class="double" style="background-image:url(pages/6.webp)"> </div>
+					<div class="double" style="background-image:url(../src/3.webp)"> </div>
+					<div class="double" style="background-image:url(../src/4.webp)"> </div>
+					<div class="double" style="background-image:url(../src/5.webp)"> </div>
+					<div class="double" style="background-image:url(../src/6.webp)"> </div>
 					<div class="double" style="background-image:url(pages/7.webp)"> </div>
-					<div class="double" style="background-image:url(pages/8.webp)"> </div>
-					<div class="double" style="background-image:url(pages/9.webp)"> </div>
-					<div class="double" style="background-image:url(pages/10.webp)"> </div>
-					<div class="page" style="background-image:url(pages/11.webp)"></div>
+					<div class="double" style="background-image:url(../src/8.webp)"> </div>
+					<div class="double" style="background-image:url(../src/9.webp)"> </div>
+					<div class="double" style="background-image:url(../src/10.webp)"> </div>
+					<div class="page" style="background-image:url(../src/11.webp)"></div>
 				</div>
 			</div>
 		</div>
@@ -156,7 +151,7 @@
 			test: Modernizr.csstransforms,
 			yep: ['../../lib/turn.min.js'],
 			nope: ['../../lib/turn.html4.min.js'],
-			both: ['../../lib/scissor.min.js', 'css/double-page.css'],
+			both: ['../../lib/scissor.min.js', '../src/css/double-page.css'],
 			complete: loadApp
 		});
 
