@@ -122,7 +122,8 @@ body{
 }
 
 .mobile .controls{
-	left: 30%;
+	left: -10%;
+	width: 90%;
 }
 
 .msg-mobile {
