@@ -10,8 +10,15 @@ body{
 .header h1, .header p{
 	text-align: center;
 }
-.header{
+.header .title{
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.header .msg-mobile{
+	font-size: 30px;
 }
 
 .flipbook-viewport{
@@ -133,4 +140,12 @@ top: 54%;
 
 .mobile .controls{
 	left: 30%;
+}
+
+.msg-mobile {
+	display: none;
+}
+
+.msg-mobile.visible{
+	display: block;
 }

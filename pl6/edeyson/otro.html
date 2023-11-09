@@ -1,84 +1,11 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width = 1050, user-scalable = no" />
-<script type="text/javascript" src="turn.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.189/pdf.min.mjs"></script>
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-
-    <div id="flipbook">
-        <div class="page">Página 1</div>
-        <div class="page">Página 2</div>
-        <!-- Agrega más páginas según necesites -->
-      </div>
-      
-
-
-
-
-
-
-<script>
-    // Función para cargar el PDF y convertirlo en imágenes
-function loadPDF(pdfUrl, containerId) {
-  const container = document.getElementById(containerId);
-
-  // Carga el PDF utilizando pdf.js
-  pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
-    for (let i = 1; i <= pdf.numPages; i++) {
-      // Renderiza cada página del PDF como imagen
-      pdf.getPage(i).then(page => {
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        const viewport = page.getViewport({ scale: 1.5 });
-
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-
-        const renderTask = page.render({ canvasContext: context, viewport: viewport });
-        renderTask.promise.then(() => {
-          // Agrega la imagen al flipbook
-          const img = document.createElement('img');
-          img.src = canvas.toDataURL();
-          container.appendChild(img);
-        });
-      });
-    }
-  });
-}
-
-// Llama a la función para cargar el PDF
-loadPDF('file:///C:/Users/edeys/Downloads/5396f77366f55-turnjs4/turnjs4/turnjs4-api-docs.pdf', 'flipbook');
-
-// Inicializa el flipbook utilizando turn.js
-$('#flipbook').turn();
-
-</script>
-
-
-<script type="text/javascript">
-
-yepnope({
-	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.min.js'],
-	nope: ['../../lib/turn.html4.min.js'],
-	both: ['../../lib/scissor.min.js', 'css/double-page.css'],
-	complete: loadApp
-});
-
-</script>
-
+  
 </body>
 </html>
