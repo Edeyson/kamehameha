@@ -132,6 +132,9 @@ body {
 	position: relative;
     left: -17%;
   }
+  .title, .download{
+	display: none;
+  }
   
   @media (orientation: landscape) {
 	.header{
