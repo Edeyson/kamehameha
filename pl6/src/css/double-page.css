@@ -1,138 +1,150 @@
 /* Basic sample */
 
-body{
-	overflow:hidden;
-	background-color:#fcfcfc;
-	margin:0;
-	padding:0;
+body {
+  overflow: hidden;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+#content {
+  max-width: 1050px;
+  width: 100%;
+  min-width: 700px;
+  overflow: hidden;
 }
 
-
-.header h1, .header p{
-	text-align: center;
+.header h1,
+.header p {
+  text-align: center;
 }
-.header .title{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1rem;
-	height: 25px;
-}
-
-.header .msg-mobile{
-	font-size: 30px;
+.header .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 45px;
 }
 
-.flipbook-viewport{
-	overflow:hidden;
-	width:100%;
-	height:100%;
+.header .msg-mobile {
+  font-size: 30px;
 }
 
-.flipbook-viewport .container{
-	position:absolute;
-	top:39%;
-	left:50%;
-	margin:auto;
+.flipbook-viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-.flipbook-viewport .flipbook{
-	width:845px;
-	height:600px;
-	left:-400px;
-	top:-200px;
+.flipbook-viewport .container {
+  position: absolute;
+  top: 5%;
+  left: 22%;
+  margin: auto;
 }
 
-.flipbook-viewport .page{
-	width:419px;
-	height:600px;
-	background-color:#fcfcfc;
-	background-repeat:no-repeat;
-	background-size:100% 100%;
+.flipbook-viewport .flipbook {
+  width: 845px;
+  height: 600px;
 }
 
-.flipbook .page{
-	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
-	box-shadow:0 0 20px rgba(0,0,0,0.2);
+.flipbook-viewport .page {
+  width: 419px;
+  height: 600px;
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.flipbook-viewport .page img{
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	margin:0;
+.flipbook .page {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.flipbook-viewport .double{
-	width:845px;
-	height:600px;
-	background-size:100% 100%;
+.flipbook-viewport .page img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
 }
 
-.controls{
-	position: absolute;
-    z-index: 4000;
-    bottom: 20px;
-	left: 42%;
-    display: flex;
-	gap: 1rem;
-    justify-content: space-between;
-    margin: auto;
-    transform: translateX(160px);
+.flipbook-viewport .double {
+  width: 845px;
+  height: 600px;
+  background-size: 100% 100%;
 }
-.controls button{
-	padding: 12px 15px;
-	border: 0;
-	font-family: 'Arial';
-	background-color: #9c7bd6;
-	border-radius: 8px;
+
+.controls {
+  position: absolute;
+  z-index: 4000;
+  bottom: 20px;
+  left: 34.8%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: auto;
+  transform: translateX(160px);
+}
+.controls button {
+  padding: 12px 15px;
+  border: 0;
+  font-family: "Arial";
+  background-color: #9c7bd6;
+  border-radius: 8px;
+}
+
+.msg-mobile{
+	display: none;
 }
 
 /* ---------------------------------------------- mobile*/
 
+@media (max-width: 1000px) {
+  .msg-mobile {
+    display: block;
+  }
+  .flipbook-viewport .container {
+	top: 15%;
+	position: relative;
+    left: -17%;
+  }
 
-.mobile .flipbook-viewport .container{
-	top: 60%;
-    left: 65%;
+  @media (orientation: landscape) {
+	
+	.msg-mobile{
+		display: none;
+	}
+
+    .mobile .flipbook-viewport .container {
+      top: 15%;
+      left: 62%;
+	  position: relative;
+    }
+
+    .mobile .flipbook-viewport .flipbook {
+      width: 470px;
+      height: 325px;
+      left: -40%;
+      top: 0px;
+    }
+
+    .mobile .flipbook-viewport .page {
+      width: 350px;
+      height: 325px;
+    }
+
+    .mobile .flipbook-viewport .double {
+      width: 470px;
+      height: 325px;
+    }
+    .controls {
+      left: -14%;
+      width: 90%;
+    }
+  }
 }
-
-
-.mobile .flipbook-viewport .flipbook{
-	width:500px;
-	height:355px;
-	left:-400px;
-	top:-200px;
-}
-
-.mobile .flipbook-viewport .page{
-	width:350px;
-	height:355px;
-}
-
-
-.mobile .flipbook-viewport .double{
-	width:500px;
-	height:355px;
-}
-
-.mobile .controls{
-	left: -10%;
-	width: 90%;
-}
-
-.msg-mobile {
-	display: none;
-}
-
-.msg-mobile.visible{
-	display: block;
-}
-
-
-
