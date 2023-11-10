@@ -133,7 +133,6 @@ body {
 	position: relative;
     left: -17%;
   }
-
   @media (orientation: landscape) {
 	.header{
 		min-height: 50px;
