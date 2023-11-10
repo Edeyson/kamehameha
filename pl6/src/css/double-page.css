@@ -135,7 +135,7 @@ body {
   }
   @media (orientation: landscape) {
 	.header{
-		min-height: 50px;
+		min-height: 10px;
 	}
 	.download{
 		position: absolute;
