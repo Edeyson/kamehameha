@@ -132,26 +132,7 @@ body {
 	position: relative;
     left: -17%;
   }
-  .mobile .flipbook-viewport .flipbook {
-	width: 470px;
-	height: 325px;
-	left: -40%;
-	top: 0px;
-  }
-
-  .mobile .flipbook-viewport .page {
-	width: 350px;
-	height: 325px;
-  }
-
-  .mobile .flipbook-viewport .double {
-	width: 470px;
-	height: 325px;
-  }
-  .controls {
-	left: -14%;
-	width: 90%;
-  }
+  
   @media (orientation: landscape) {
 	.header{
 		min-height: 10px;
@@ -180,7 +161,7 @@ body {
     }
 
     .mobile .flipbook-viewport .flipbook {
-      width: 470px;
+      width: 470px !important;
       height: 325px;
       left: -40%;
       top: 0px;
